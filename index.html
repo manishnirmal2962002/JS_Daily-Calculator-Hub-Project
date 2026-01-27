@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Calculator Hub</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="navbar"><img src="./international1.avif" alt="">
+      <div class="Hub"><a href="">Calculator Hub</a></div>
+    </div>
+    <div class="Home">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Tools</a>
+    </div>
+<button onclick="toggleDark()">🌙 Dark Mode</button>
+</nav>
+
+<header>
+  <h1>Daily Calculator Hub</h1>
+  <p>Simple tools you can use every day</p>
+</header>
+
+<div class="container">
+
+<!-- Salary -->
+<div class="card">
+<h2>Salary Calculator</h2>
+<input type="number" id="salary" placeholder="Monthly Salary ₹">
+<button onclick="calcSalary()">Calculate</button>
+<button class="clear" onclick="clearSalary()">Clear</button>
+<div class="result" id="salaryResult"></div>
+<div class="history" id="salaryHistory"></div>
+</div>
+
+<!-- EMI -->
+<div class="card">
+<h2>EMI Calculator</h2>
+<input type="number" id="loan" placeholder="Loan Amount">
+<input type="number" id="rate" placeholder="Interest %">
+<input type="number" id="years" placeholder="Years">
+<button onclick="calcEMI()">Calculate</button>
+<button class="clear" onclick="clearEMI()">Clear</button>
+<div class="result" id="emiResult"></div>
+<div class="history" id="emiHistory"></div>
+</div>
+
+<!-- BMI -->
+<div class="card">
+<h2>BMI Calculator</h2>
+<input type="number" id="weight" placeholder="Weight (kg)">
+<input type="number" id="height" placeholder="Height (cm)">
+<button onclick="calcBMI()">Calculate</button>
+<button class="clear" onclick="clearBMI()">Clear</button>
+<div class="result" id="bmiResult"></div>
+<div class="history" id="bmiHistory"></div>
+</div>
+
+<!-- Age -->
+<div class="card">
+<h2>Age Calculator</h2>
+<input type="date" id="dob">
+<button onclick="calcAge()">Calculate</button>
+<button class="clear" onclick="clearAge()">Clear</button>
+<div class="result" id="ageResult"></div>
+<div class="history" id="ageHistory"></div>
+</div>
+
+</div>
+<footer>
+    <p>© 2026 Daily Calculator Hub | Free Tools</p>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
