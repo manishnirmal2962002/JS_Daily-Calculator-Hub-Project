@@ -124,7 +124,8 @@ button{
   color: #fff;
   font-weight: bold;
   border: none;
-  width:300px;
+  width:100%;
+  max-width:300px;
   border-radius: 8px;
   cursor:pointer;
 }
@@ -134,6 +135,13 @@ background: linear-gradient(135deg, #1d4ed8, #1e40af);
   color:#ef4444 ;
   transition: 1s ease;
   font-weight: bold;
+}
+@media(max-width:600px){
+  button{
+    max-width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 button:active{
@@ -161,3 +169,4 @@ footer {
     font-size: 14px;
     color: #a09595;
 }
+
